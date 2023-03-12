@@ -1,6 +1,6 @@
-name: week-18-labs
+name: infra
 runtime:
-  name: nodejs
+  name: python
   options:
-    typescript: false
+    virtualenv: venv
 description: An insecure AWS deployment

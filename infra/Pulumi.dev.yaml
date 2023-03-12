@@ -1,1 +1,4 @@
-encryptionsalt: v1:at49k9H524A=:v1:Y3BGKneLosJIF2ut:eF/OJB1ZutdIyPvWFifL/H56J68Qyw==
+config:
+  aws:region: eu-west-2
+  infra:instanceType: t2.micro
+  infra:vpcNetworkCidr: 10.0.0.0/22
