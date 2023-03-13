@@ -1,11 +1,22 @@
 # Week 18 labs
 
-AWS Cloud security
+AWS Cloud security lab
 
-- introducing Pulumi (as an alternative to Cloudformation)
+- Introducing Pulumi (as an alternative to Cloudformation)
 - AWS Security Hub
-- AWS Macie
 - AWS Prowler
+
+## Todo
+
+- [ ] ClickOps AWS Security Hub on your account
+- [ ] Install AWS Prowler
+- [ ] Install Pulumi
+- [ ] Deploy stack
+- [ ] Run Prowler on ec2
+- [ ] Fix script to reduce number of Prowler and AWS Security hub alerts
+- [ ] Redploy stack and run prowler
+
+Lowest number of prowler issues wins
 
 ## Getting started
 
@@ -39,6 +50,9 @@ pulumi login s3://"${PULUMI_STATE_BUCKET_NAME}"
 
 # install node deps
 (cd infra && npm i)
+
+# Check stack
+(cd infra && pulumi preview)
 
 # Deploy stack
 (cd infra && pulumi up)
